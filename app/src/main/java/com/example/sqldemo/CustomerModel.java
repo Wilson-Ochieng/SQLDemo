@@ -2,7 +2,7 @@ package com.example.sqldemo;
 
 public class CustomerModel {
     private int ID;
-    private String name;
+    private String cname;
     private  int age;
     private String activity;
 
@@ -16,11 +16,11 @@ public class CustomerModel {
     }
 
     public String getName() {
-        return name;
+        return cname;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.cname = name;
     }
 
     public int getAge() {
@@ -43,7 +43,7 @@ public class CustomerModel {
     public String toString() {
         return "CustomerModel{" +
                 "ID=" + ID +
-                ", name='" + name + '\'' +
+                ", firstname='" + cname + '\'' +
                 ", age=" + age +
                 ", activity='" + activity + '\'' +
                 '}';
@@ -55,7 +55,7 @@ public class CustomerModel {
     //constructors
     public CustomerModel(int ID, String name, int age, String activity) {
         this.ID = ID;
-        this.name = name;
+        this.cname = name;
         this.age = age;
         this.activity = activity;
         //non-parameterised constructor
